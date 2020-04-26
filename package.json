@@ -1,0 +1,43 @@
+{
+  "name": "default-project-base",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "repository": {
+    "github": "https://github.com/jjakucionis/default-project-base.git"
+  },
+  "scripts": {
+    "build": "webpack --config ./configs/webpack.config.js --env.mode=prod --mode=production",
+    "start": "webpack-dev-server --config ./configs/webpack.config.js --env.mode=dev --mode=development --watch",
+    "stageassets": "git add assets"
+  },
+  "pre-commit": [
+    "build",
+    "stageassets"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@types/node": "^13.13.2",
+    "autoprefixer": "^9.4.2",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.4",
+    "css-hot-loader": "^1.4.2",
+    "css-loader": "^3.5.3",
+    "cssnano": "^4.1.7",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^6.0.0",
+    "node-sass": "^4.10.0",
+    "postcss-loader": "^3.0.0",
+    "pre-commit": "^1.2.2",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.0",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-loader": "^3.5.4",
+    "typescript": "^3.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
