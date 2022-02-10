@@ -27,7 +27,7 @@
     "cssnano": "^4.1.7",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^6.0.0",
-    "node-sass": "^4.10.0",
+    "node-sass": "^7.0.0",
     "postcss-loader": "^3.0.0",
     "pre-commit": "^1.2.2",
     "sass-loader": "^8.0.2",
